@@ -13,9 +13,9 @@ docker build -t nvucinic/nmap .
 
 ```bash
 
-docker run nvucinic/nmap -p 22 google.com  # simple port scan
-docker run nvucinic/nmap -sV -O -v google.com # service Version, Os detection, verbose
-docker run nvucinic/nmap -v A -6 2607:f0d0:1002:51::4 # Agressive, ipv6 scan
+docker run -it nvucinic/nmap -p 22 google.com  # simple port scan
+docker run -it nvucinic/nmap -sV -O -v google.com # service Version, Os detection, verbose
+docker run -it nvucinic/nmap -v A -6 2607:f0d0:1002:51::4 # Agressive, ipv6 scan
 ...
 ```
 
